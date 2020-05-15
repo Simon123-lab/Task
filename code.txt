@@ -1,0 +1,71 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+
+
+namespace myapp
+{
+        
+    public class arthmetic
+    {
+        public void add()
+        {
+            int value1;
+            int value2;
+            int result;
+
+            Console.WriteLine("Enter the value to be added");
+            value1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter the value to be added");
+            value2 = Convert.ToInt32(Console.ReadLine());
+            result = value1 + value2;
+            Console.WriteLine("Addition = " +result);
+
+
+        }
+
+        public void mul(int a,int b)
+        {
+           
+
+            int result = a * b;
+            Console.WriteLine("Result = " +result);
+
+
+        }
+
+
+    }
+ 
+
+
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            arthmetic obj = new arthmetic();
+
+            obj.add(); //call
+            obj.mul(10,10); // parametized
+
+
+            //    //String user_name;
+            //    //Console.WriteLine("Enter your name");
+            //    //user_name = Console.ReadLine();
+            //    //Console.WriteLine("You Entered : "+user_name+" Value");
+
+
+
+
+
+
+
+
+        }
+    }
+}
